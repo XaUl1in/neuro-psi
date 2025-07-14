@@ -4,13 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Espaço Neuro & Psi</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/animations.js" defer></script>
   </head>
   <body>
     <header>
       <div class="container">
-        <div class="logo">Espaço Neuro & Psi</div>
-        <nav>
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Espaço Neuro & Psi" />
+        </div>
+
+        <!-- Menu mobile hambúrguer -->
+        <div class="menu-toggle" id="menuToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="nav-menu" id="navMenu">
           <ul>
             <li><a href="#inicio">Início</a></li>
             <li><a href="#diferenciais">Diferenciais</a></li>
@@ -19,6 +30,7 @@
             <li><a href="#contato">Contato</a></li>
           </ul>
         </nav>
+
         <a href="#contato" class="btn-header">Agende sua consulta</a>
       </div>
     </header>
@@ -33,12 +45,12 @@
       </div>
     </section>
     <section class="bemvindo">
-      <h2>Bem-vindo ao <span class="pink">Espaço Neuro & Psi</span></h2>
+      <h2>Bem-vindo ao <span class="pink">Espaço Neuro&Psi</span></h2>
       <p>
         Somos uma clínica especializada em saúde mental, desenvolvimento humano
         e estética integrada, com uma abordagem acolhedora e humanizada. Aqui,
-        oferecemos atendimentos personalizados para adultos e crianças, com uma
-        equipe multidisciplinar pronta para cuidar de você por completo.
+        oferecemos atendimentos personalizados para todas as faixas etárias, com
+        uma equipe multidisciplinar pronta para cuidar de você por completo.
       </p>
     </section>
     <section class="diferenciais" id="diferenciais">
@@ -165,22 +177,27 @@
         equipadas para psicologia, neuropsicologia, terapias cognitivas e
         estética, além de ambientes infantis pensados com carinho.
       </p>
-      <a href="#estrutura" class="btn-main">Conheça nossa clínica</a>
+      <a href="#estrutura" class="btn-main" style="margin-bottom: 50px"
+        >Conheça nossa clínica</a
+      >
       <div class="galeria">
         <div class="galeria-item">
-          <img src="https://placehold.co/200x150" alt="Salas de Psicologia" />
+          <img
+            src="assets/images/salas de psicologia.jpg"
+            alt="Salas de Psicologia"
+          />
           <h3>Salas de Psicologia</h3>
           <p>Ambientes acolhedores e reservados para sessões individuais.</p>
         </div>
         <div class="galeria-item">
-          <img src="https://placehold.co/200x150" alt="Espaço Infantil" />
+          <img src="assets/images/infantil.jpg" alt="Espaço Infantil" />
           <h3>Espaço Infantil</h3>
           <p>Área especialmente projetada para atendimento de crianças.</p>
         </div>
         <div class="galeria-item">
-          <img src="https://placehold.co/200x150" alt="Sala de Estética" />
-          <h3>Sala de Estética</h3>
-          <p>Espaço moderno equipado para procedimentos estéticos.</p>
+          <img src="assets/images/recepção.jpg" alt="Recepção acolhedora" />
+          <h3>Recepção Acolhedora</h3>
+          <p>Espaço moderno equipado para cuidar de você.</p>
         </div>
       </div>
     </section>
@@ -209,7 +226,10 @@
           <p>
             Apoio emocional, autoconhecimento, saúde mental e qualidade de vida.
           </p>
-          <a href="#">Saiba mais →</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5512988286594&text&type=phone_number&app_absent=0"
+            >Saiba mais →</a
+          >
         </div>
         <div class="card">
           <div class="card-icon">
@@ -232,7 +252,10 @@
           <p>
             Desenvolvimento emocional, dificuldades escolares e comportamentais.
           </p>
-          <a href="#">Saiba mais →</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5512988286594&text&type=phone_number&app_absent=0"
+            >Saiba mais →</a
+          >
         </div>
         <div class="card">
           <div class="card-icon">
@@ -255,7 +278,10 @@
           <p>
             Investigação de funções cognitivas, emocionais e comportamentais.
           </p>
-          <a href="#">Saiba mais →</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5512988286594&text&type=phone_number&app_absent=0"
+            >Saiba mais →</a
+          >
         </div>
         <div class="card">
           <div class="card-icon">
@@ -279,7 +305,10 @@
             Atendimento especializado para crianças e adolescentes com
             dificuldades escolares.
           </p>
-          <a href="#">Saiba mais →</a>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5512988286594&text&type=phone_number&app_absent=0"
+            >Saiba mais →</a
+          >
         </div>
       </div>
     </section>
@@ -288,27 +317,273 @@
       <div class="especialistas-lista">
         <div class="especialista-card">
           <div class="especialista-foto">
-            <img
-              src="https://randomuser.me/api/portraits/women/44.jpg"
-              alt="Cibele Rezende dos Santos"
-            />
+            <img src="assets/images/psicologas/Barbara.png" alt="Barbara" />
           </div>
           <div class="especialista-info">
-            <h3>Cibele Rezende dos Santos</h3>
+            <h3>Bárbara Gandur</h3>
             <p class="especialista-titulo">
-              Psicóloga Clínica<br />CRP 06/168100
+              Atendimento de criançasa partir de 6 anos, adolescentes, adultos e
+              idosos
             </p>
             <ul class="especialista-especialidades">
-              <li><span class="icon-cap">🎓</span> Psicologia Analítica</li>
               <li>
-                <span class="icon-cap">🎓</span> Especialista em Crianças e
-                Adolescentes
+                <span class="icon-cap">🎓</span> Especialista em Neuropsicologia
               </li>
+              <li>
+                <span class="icon-cap">🎓</span> Avaliação Neuropsicológica
+              </li>
+              <li><span class="icon-cap">🎓</span> Avaliação Psicológica</li>
             </ul>
-            <a href="#" class="btn-main especialista-btn">Saiba mais</a>
           </div>
         </div>
-        <!-- Adicione mais cards de especialistas aqui -->
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/Priscila.png" alt="Priscila" />
+          </div>
+          <div class="especialista-info">
+            <h3>Priscila Granzoto</h3>
+            <p class="especialista-titulo">
+              Atendimento de crianças a partir de 4 anos, adolescentes, adultos
+              e idosos
+            </p>
+            <ul class="especialista-especialidades">
+              <li>
+                <span class="icon-cap">🎓</span> Especialista em Avaliação
+                Psicológica
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Especialista em Psicologia
+                Infantil e de adolescentes
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Especialista em Psicologia
+                Hospitalar
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/Julia.png" alt="Julia" />
+          </div>
+          <div class="especialista-info">
+            <h3>Julia Oliveira</h3>
+            <p class="especialista-titulo">
+              Crianças, adolescentes, adultos e idosos
+            </p>
+            <ul class="especialista-especialidades">
+              <li><span class="icon-cap">🎓</span> Ansiedade</li>
+              <li><span class="icon-cap">🎓</span> Depressão</li>
+              <li><span class="icon-cap">🎓</span> Luto</li>
+              <li>
+                <span class="icon-cap">🎓</span> Atletas de base e alto
+                rendimento
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/victoria.png" alt="Bianca" />
+          </div>
+          <div class="especialista-info">
+            <h3>Victória Souza</h3>
+            <p class="especialista-titulo">
+              Crianças a partir de 6 anos, adolescentes, e adultos
+            </p>
+            <ul class="especialista-especialidades">
+              <li><span class="icon-cap">🎓</span> Identidade e gênero</li>
+              <li><span class="icon-cap">🎓</span> Ansiedade</li>
+              <li><span class="icon-cap">🎓</span> Depressão</li>
+              <li><span class="icon-cap">🎓</span> Transtorno Bipolar</li>
+              <li>
+                <span class="icon-cap">🎓</span> Questões corporais e auto
+                percepção
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Relações raciais e vivências da
+                negritude
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Relacionamentos e ética do amor
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Luto, perdas e conflitos
+                familiares
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/Jordana.png" alt="Gabriela" />
+          </div>
+          <div class="especialista-info">
+            <h3>Jordana Jardino</h3>
+            <p class="especialista-titulo">
+              Adolescentes a partir dos 14 anos e adultos
+            </p>
+            <ul class="especialista-especialidades">
+              <li><span class="icon-cap">🎓</span> Ansiedade</li>
+              <li><span class="icon-cap">🎓</span> Depressão</li>
+              <li><span class="icon-cap">🎓</span> Conflitos interpessoais</li>
+              <li><span class="icon-cap">🎓</span> Dependência emocional</li>
+              <li><span class="icon-cap">🎓</span> Autoestima</li>
+              <li><span class="icon-cap">🎓</span> Autoconfiança</li>
+              <li><span class="icon-cap">🎓</span> Regulação emocional</li>
+              <li><span class="icon-cap">🎓</span> Desenvolvimento pessoal</li>
+              <li><span class="icon-cap">🎓</span> Estresse</li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/ISabela.png" alt="Isabela" />
+          </div>
+          <div class="especialista-info">
+            <h3>Isabela Vilas</h3>
+            <p class="especialista-titulo">
+              Especialista em atendimento de Crianças, Adolescentes e Adultos
+            </p>
+            <ul class="especialista-especialidades">
+              <li><span class="icon-cap">🎓</span> Orientação a pais</li>
+              <li><span class="icon-cap">🎓</span> Desenvolvimento infantil</li>
+              <li>
+                <span class="icon-cap">🎓</span> Questões emocionais na
+                adolescência
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Desenvolvimento de carreira
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Grupos terapêuticos para mães,
+                crianças, adolescentes, grávidas e puérperas
+              </li>
+              <li><span class="icon-cap">🎓</span> Orientação profissional</li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/gabriela.png" alt="Jordana" />
+          </div>
+          <div class="especialista-info">
+            <h3>Gabriela Moraes</h3>
+            <p class="especialista-titulo">Especialista em Gestalt-terapia</p>
+            <ul class="especialista-especialidades">
+              <li><span class="icon-cap">🎓</span> Luto</li>
+              <li><span class="icon-cap">🎓</span> Suicídio</li>
+              <li><span class="icon-cap">🎓</span> Ansiedade</li>
+              <li><span class="icon-cap">🎓</span> Depressão</li>
+              <li><span class="icon-cap">🎓</span> Autoestima</li>
+              <li><span class="icon-cap">🎓</span> Relacionamentos</li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/taina.png" alt="Julia" />
+          </div>
+          <div class="especialista-info">
+            <h3>Tayná Francine</h3>
+            <p class="especialista-titulo">
+              Crianças, adolescentes, adultos e idosos
+            </p>
+            <ul class="especialista-especialidades">
+              <li><span class="icon-cap">🎓</span> Relações pessoais</li>
+              <li><span class="icon-cap">🎓</span>Ansiedade</li>
+              <li><span class="icon-cap">🎓</span>Relacionamentos Amorosos</li>
+              <li><span class="icon-cap">🎓</span>TDHA infantil e adultos</li>
+              <li><span class="icon-cap">🎓</span>Carreira</li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/pamela.png" alt="Larissa" />
+          </div>
+          <div class="especialista-info">
+            <h3>Pâmela Oliveira</h3>
+            <p class="especialista-titulo">Pedagoga</p>
+            <ul class="especialista-especialidades">
+              <li>
+                <span class="icon-cap">🎓</span> Especialista em
+                Neuropsicopedagogia Clínica e Institucional
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Especialista em Análise do
+                Comportamento
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Avaliação Neuropsicopedagógica
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/amanda.png" alt="Taina" />
+          </div>
+          <div class="especialista-info">
+            <h3>Amanda Freire</h3>
+            <p class="especialista-titulo">Pós-graduanda em Psiquiatria</p>
+            <ul class="especialista-especialidades">
+              <li>
+                <span class="icon-cap">🎓</span> Atendimento de adultos mulheres
+                e homens a partir de 18 anos
+              </li>
+              <li><span class="icon-cap">🎓</span> Distúrbios do sono</li>
+              <li><span class="icon-cap">🎓</span> Cessação de tabagismo</li>
+              <li><span class="icon-cap">🎓</span> Esquizofrenia</li>
+              <li><span class="icon-cap">🎓</span> TOC</li>
+              <li>
+                <span class="icon-cap">🎓</span> Transtorno afetivo bipolar
+              </li>
+              <li>
+                <span class="icon-cap">🎓</span> Transtornos relacionados a
+                traumas e estressores
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/bianca.png" alt="Victoria" />
+          </div>
+          <div class="especialista-info">
+            <h3>Bianca Lopes</h3>
+            <p class="especialista-titulo">Nutricionista</p>
+            <ul class="especialista-especialidades">
+              <li>
+                <span class="icon-cap">🎓</span> Especialista em clínica
+                funcional
+              </li>
+              <li><span class="icon-cap">🎓</span> Emagrecimento</li>
+              <li><span class="icon-cap">🎓</span> Hipertrofia</li>
+              <li><span class="icon-cap">🎓</span> Reeducação alimentar</li>
+              <li><span class="icon-cap">🎓</span> Bem-estar</li>
+              <li><span class="icon-cap">🎓</span> Doenças crônicas</li>
+            </ul>
+          </div>
+        </div>
+        <div class="especialista-card">
+          <div class="especialista-foto">
+            <img src="assets/images/psicologas/larissa.png" alt="Victoria" />
+          </div>
+          <div class="especialista-info">
+            <h3>Larissa Oliveira</h3>
+            <p class="especialista-titulo">Esteticista</p>
+            <ul class="especialista-especialidades">
+              <li><span class="icon-cap">🎓</span> Lipo sem cortes</li>
+              <li><span class="icon-cap">🎓</span> Massagem modeladora</li>
+              <li><span class="icon-cap">🎓</span> detox</li>
+              <li><span class="icon-cap">🎓</span> endermo</li>
+              <li><span class="icon-cap">🎓</span> pump</li>
+              <li><span class="icon-cap">🎓</span> drenagem</li>
+              <li><span class="icon-cap">🎓</span> microagulhamento</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="contato" id="contato">
@@ -320,23 +595,29 @@
       <div class="contato-info">
         <div>
           <p>
-            <strong>Endereço</strong><br />Rua das Acácias, 123<br />Bairro
-            Central<br />Sua Cidade - SP<br />CEP: 01234-567
+            <strong>Endereço</strong><br />Rua capitão Carlos de Moura, 288 vila
+            Pantaleão - Caçapava
           </p>
           <p>
             <strong>Horário de Funcionamento</strong><br />Segunda à Sexta: 8h
             às 18h<br />Sábado: 8h às 12h<br />Domingo: Fechado
           </p>
           <p>
-            <strong>Telefone</strong><br />(11) 9999-9999<br />WhatsApp
+            <strong>Telefone</strong><br />+55 12 988286594<br />WhatsApp
             disponível
           </p>
         </div>
         <div class="mapa">
           <div class="mapa-placeholder">
-            Mapa interativo<br /><span style="font-size: 0.9em"
-              >Clique para ver no Google Maps</span
-            >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.006676269473!2d-45.70999552390492!3d-23.096851444692856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cc51717c2ec6ef%3A0xfe7592e2417e8dd9!2sR.%20Cap.%20Carlos%20de%20Moura%2C%20288%20-%20Vila%20Pantaleao%2C%20Ca%C3%A7apava%20-%20SP%2C%2012280-050!5e0!3m2!1spt-BR!2sbr!4v1751914814475!5m2!1spt-BR!2sbr"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
       </div>
@@ -345,104 +626,97 @@
       <h2>Fale <span class="pink">com a gente</span></h2>
       <p>Entre em contato e comece sua jornada de cuidado conosco</p>
       <div class="fale-container">
-        <form class="form-contato">
-          <input type="text" placeholder="Nome completo" required />
-          <input type="email" placeholder="E-mail" required />
-          <input type="tel" placeholder="Telefone" />
-          <textarea placeholder="Como podemos te ajudar?"></textarea>
-          <button type="submit">Enviar mensagem</button>
-        </form>
         <div class="fale-info">
           <div class="fale-card">
             <div class="card-icon">
-              <!-- Ícone -->
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="40" height="40" rx="10" fill="#F8E9EF" />
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#D1FADF" />
                 <path
-                  d="M20 12a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm0 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
-                  fill="#E89CAE"
+                  d="M20 12.5a7.5 7.5 0 0 0-6.5 11.25l-1 3.25 3.34-1A7.5 7.5 0 1 0 20 12.5Zm0 13.75a6.25 6.25 0 0 1-3.19-.87l-.23-.14-2 .6.6-2-.14-.23A6.25 6.25 0 1 1 20 26.25Zm3.13-4.13c-.17-.09-1-.5-1.15-.56-.15-.06-.26-.09-.37.09-.11.17-.43.56-.53.67-.09.11-.2.13-.37.04-.17-.09-.72-.27-1.37-.85-.51-.45-.85-1-.95-1.17-.09-.17-.01-.26.07-.34.07-.07.17-.2.26-.3.09-.11.12-.19.18-.32.06-.13.03-.24-.01-.33-.04-.09-.37-.89-.5-1.22-.13-.32-.27-.28-.37-.29-.09-.01-.2-.01-.31-.01-.11 0-.29.04-.44.19-.15.15-.58.57-.58 1.39 0 .82.59 1.61.67 1.72.09.11 1.16 1.77 2.82 2.42.39.16.7.25.94.32.4.13.77.11 1.06.07.32-.05 1-.41 1.14-.8.14-.39.14-.73.1-.8-.04-.07-.15-.11-.32-.2Z"
+                  fill="#12B76A"
                 />
               </svg>
             </div>
             <div class="fale-card-content">
-            Atendimento direto pelo WhatsApp<br /><span
-              >Resposta rápida e atendimento personalizado</span
-            >
+              <a href="https://wa.me/5512988286594" target="_blank"
+                >Atendimento direto pelo WhatsApp</a
+              ><br />
+              <span>Resposta rápida e atendimento personalizado</span>
             </div>
           </div>
           <div class="fale-card">
             <div class="card-icon">
-              <!-- Ícone -->
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="40" height="40" rx="10" fill="#F8E9EF" />
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FDE2FF" />
                 <path
-                  d="M20 12a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm0 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
-                  fill="#E89CAE"
+                  d="M20 15.5A4.5 4.5 0 1 0 20 24.5A4.5 4.5 0 1 0 20 15.5Z"
+                  stroke="#D72660"
+                  stroke-width="1.5"
                 />
+                <rect
+                  x="13"
+                  y="13"
+                  width="14"
+                  height="14"
+                  rx="4"
+                  stroke="#D72660"
+                  stroke-width="1.5"
+                />
+                <circle cx="25.5" cy="14.5" r="1" fill="#D72660" />
               </svg>
             </div>
             <div class="fale-card-content">
-            Siga @espa_coneuropsi<br /><span
-              >Conteúdos sobre saúde mental e bem-estar</span
-            >
+              <a
+                href="https://www.instagram.com/espa_coneuropsi/"
+                target="_blank"
+                >Siga @espa_coneuropsi</a
+              ><br />
+              <span>Conteúdos sobre saúde mental e bem-estar</span>
             </div>
           </div>
           <div class="fale-card">
             <div class="card-icon">
-              <!-- Ícone -->
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="40" height="40" rx="10" fill="#F8E9EF" />
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FDF3F0" />
                 <path
-                  d="M20 12a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm0 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
-                  fill="#E89CAE"
+                  d="M26.5 23.5c-1.5 1.5-3.5 2.5-6.5 2.5s-5-1-6.5-2.5c-1.5-1.5-2.5-3.5-2.5-6.5s1-5 2.5-6.5c1.5 1.5 2.5 3.5 2.5 6.5s-1 5-2.5 6.5Z"
+                  stroke="#E89CAE"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M20 17.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z"
+                  stroke="#E89CAE"
+                  stroke-width="1.5"
                 />
               </svg>
             </div>
             <div class="fale-card-content">
-            (12) 99653-7979<br /><span
-              >Horário comercial: Segunda à Sábado, 9h às 17h</span
-            >
-          </div>
+              <a href="tel:12996537979">+55 12 988286594</a><br />
+              <span>Horário comercial: Segunda à Sábado, 9h às 17h</span>
+            </div>
           </div>
           <div class="fale-card">
             <div class="card-icon">
-              <!-- Ícone -->
-              <svg
-                width="40"
-                height="40"
-                viewBox="0 0 40 40"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="40" height="40" rx="10" fill="#F8E9EF" />
-                <path
-                  d="M20 12a8 8 0 1 0 0 16 8 8 0 0 0 0-16Zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12Zm0 3a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"
-                  fill="#E89CAE"
+              <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <rect width="40" height="40" rx="12" fill="#FDF7E3" />
+                <rect
+                  x="11"
+                  y="15"
+                  width="18"
+                  height="10"
+                  rx="2"
+                  stroke="#F4B400"
+                  stroke-width="1.5"
                 />
+                <path d="M11 15l9 7l9-7" stroke="#F4B400" stroke-width="1.5" />
               </svg>
             </div>
             <div class="fale-card-content">
-            contato@espaconeuropsi.com.br<br /><span
-              >Respondemos em até 24 horas</span
-            >
+              <a href="mailto:contato@espaconeuropsi.com.br"
+                >contato@espaconeuropsi.com.br</a
+              ><br />
+              <span>Respondemos em até 24 horas</span>
+            </div>
           </div>
         </div>
       </div>
@@ -454,15 +728,36 @@
           Cuidado integral em saúde mental, desenvolvimento humano e estética,
           com acolhimento e profissionalismo.
           <div class="footer-social">
-            <span>WhatsApp</span> <span>Instagram</span> <span>Facebook</span>
+            <a
+              href="https://wa.me/5512988286594"
+              target="_blank"
+              class="footer-link"
+              >WhatsApp</a
+            >
+            <a
+              href="https://www.instagram.com/espa_coneuropsi/"
+              target="_blank"
+              class="footer-link"
+              >Instagram</a
+            >
           </div>
         </div>
         <div>
           <strong>Contato</strong><br />
-          Rua das Acácias, 123<br />
-          Bairro Central<br />
-          Caçapava - SP<br />
-          (12) 99653-7979<br />
+          Rua capitão Carlos de Moura, 288 vila Pantaleão - Caçapava<br />
+          +55 12 98828-6594<br />
+          <a
+            href="https://wa.me/5512988286594"
+            target="_blank"
+            class="footer-link"
+            >WhatsApp</a
+          ><br />
+          <a
+            href="https://www.instagram.com/espa_coneuropsi/"
+            target="_blank"
+            class="footer-link"
+            >Instagram</a
+          ><br />
           contato@espaconeuropsi.com.br
         </div>
         <div>
