@@ -47,8 +47,8 @@ header {
 }
 
 .logo img {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
   transition: all 0.3s ease;
 }
 
@@ -174,7 +174,7 @@ nav a.active::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.62);
 }
 
 .hero-content {
